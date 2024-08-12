@@ -10,6 +10,67 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  
+  <main>
+    <div class="success-notification-container hidden">
+      <div>
+        <img src="assets\images\icon-success-check.svg" alt="Success Icon">
+        <h2>Message Sent!</h2>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    
+    <form>
+      <h1>Contact Us</h1>
+
+      <div class="first-name-container input-container">
+        <label>First Name</label>
+        <input id="first-name-input" type="text">
+        <p class="error-message"></p>
+      </div>
+
+      <div class="last-name-container input-container">
+        <label>Last Name</label>
+        <input id="last-name-input" type="text">
+        <p class="error-message"></p>
+      </div>
+
+      <div class="email-container input-container">
+        <label>Email Address</label>
+        <input id="email-input" type="email">
+        <p class="error-message"></p>
+      </div>
+
+      <div class="type-container input-container">
+        <label>Query Type</label>
+
+        <div>
+          <input type="radio" name="type">
+          <p>General Enquiry</p>
+        </div>
+
+        <div>
+          <input type="radio" name="type">
+          <p>Support Request</p>
+        </div>
+        
+        <p class="error-message"></p>
+      </div>
+
+      <div class="message-container input-container">
+        <label>Message</label>
+        <textarea id="message-input"></textarea>
+        <p class="error-message"></p>
+      </div>
+
+      <div class="checkbox-container">
+        <input id="checkbox-input" type="checkbox">
+        <label>I consent to being contacted by the team</label>
+        <p class="error-message"></p>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </main>
 </body>
 </html>
